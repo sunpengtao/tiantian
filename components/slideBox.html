@@ -1,0 +1,26 @@
+<div class="p_r">
+    <ion-slide-box active-slide="vm.activeSlide" show-pager="false" on-slide-changed="vm.slideHasChanged(index)">
+        <ion-slide ng-repeat="item1 in vm.four">
+            <div class="home home1 bc_G p_r pb_30">
+                <div class="p_a w_100 t_10 z_2">
+                    <p class="mg_0a w_35 h30 bc_g1 f_18 fw_b br_15">
+                        <span class="f_l d_ib w_35 pl_10 pt_2"><i class="ic ic25 ic_timer"></i></span>
+                        <span class="f_r h30 lh_30 w_65 cl_w">时间轴</span>
+                    </p>
+                    <p class="w_85 mg_0a">
+                        <span class="f_16">NEXT</span>
+                        <span></span>
+                    </p>
+                </div>
+                <ul class="pt_25 pr_10 pl_10">
+                    <li ng-repeat="item in vm.timer" ng-click="vm.goDetails(item.code)" class="w_100 mb_5 h40 bc_w p_r z_1">
+                        <span class="d_ib w_10 p_a t_10 l_5"><i class="ic w17 h17 br_50 p_r t_3 l_10" ng-class="item.color"></i></span>
+                        <span class="d_ib w_35 h40 lh_40 f_16 fw_b ml_5 of_h ws_n">{{item.eventName}}</span>
+                        <span class="d_ib w_30 h40 lh_40 f_12 of_h ws_n">{{item.eventTime}}</span>
+                        <span class="d_ib f_r pt_8"><i class="but but_Right"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+</div>

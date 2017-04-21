@@ -1,0 +1,21 @@
+.banner {height: 215px;background-image:  url('../img/jpg/banner1.jpg'); }
+.avatar {top: 20px;  left: 15px;  width: 56px;  transform: scale(0.7,0.7);height: 56px;  border: 3px solid #fff;  overflow: hidden;  background: #fff;  }
+.avatar img{padding-top:2px ;  width: 50px; }
+.search{margin-top:125px; }/*搜索*/
+.controllerBox div p{width: 25%;float: left;height: 45px;line-height:45px;transition: 0.3s all;}/*房间切换*/
+.controllerBox span{height: 3px;position: absolute;bottom: -5px;left:0;}
+.cont{top: 307px;}
+
+.home1 li:nth-child(1){height:80px;}
+.home1 li:nth-child(1) span{margin-top: 35px;}
+.home1 li span:nth-child(2){text-overflow: ellipsis;margin-left: 15%}
+.home1 li span:nth-child(3){text-overflow: ellipsis;}
+.home1 li span:nth-child(4){width: 12%}
+.leftActionLi:last-child{border-bottom: 1px solid #fff;}
+.loginBg{background-image:url(../img/jpg/bj.jpg)}
+.bg{
+    background: -webkit-linear-gradient( #5dadde,#add990); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#5dadde,#add990); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient( #5dadde,#add990); /* Firefox 3.6 - 15 */
+    background: linear-gradient( rgba(71, 146, 211, 0.61),#add990) /* 标准的语法 */
+}

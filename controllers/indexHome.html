@@ -1,0 +1,48 @@
+<div class="w_100 h_100 bg cl_w" ng-click="vm.popFt||vm.avatar()">
+    <div class="w180 p_a t_85 l_40">
+        <div ng-click="vm.goActions('search')" class="f_r">
+            <p class="f_14 f_l">
+                <span class="d_b h30 lh_30">下午好，孙先生</span>
+                <span class="d_b h30 lh_30">133****1231</span>
+            </p>
+            <p class="f_l pt_25 pl_10"><i class="ic ic25 ic_into h15 w10"></i></p>
+        </div>
+        <ul class="p_a t_150">
+            <li ng-repeat="item in vm.leftAction" class="leftActionLi h40 lh_40 bt_w w180 p_r f_16" ng-click="vm.goActions(item.url)" on-repeat-finish>
+                <span class="p_a l_2 t_5 w30"><i class="ic ic30" ng-class="item.src"></i></span>
+                <span class="p_a l_50">{{item.name}}</span>
+                <span class="p_a l_a r_0 t_7"><i class="but but_Right tf_08"></i></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<p class="p_a b_70 cl_w t_a l_40" ng-click="vm.close('提示','你将退出当前账号','login')">
+    <i class="ic ic25 ic_close"></i>
+    <span>退出</span>
+</p>
+<div class="avatar p_a br_50 z_2 ts_03 bc_G" ng-click="vm.avatar()" style="{{vm.cut1}}" >
+    <img src="img/png/avatar.png">
+</div>
+<ion-view class="p_a ts_03 z_1" style="{{vm.cut}}" ng-click="vm.popFt||vm.avatar()">
+    <ion-header-bar class="p_a">
+        <div class="banner pImg w_100 ts_1" id="name" style="{{vm.bannerUrl}}">
+            <div class="search mg_0a h35 bc_w f_0 br_5 w_80" ui-sref="search()"  nav-direction="swap">
+                <p class="f_l w_40 h35">
+                    <span class="ic ic25 ic_search f_r p_r t_5"></span>
+                </p>
+                <p class="h35 f_r w_55 f_18 pt_7 cl_G2">搜索功能</p>
+            </div>
+            <div class="w_100 h45 ta_c f_16 cl_w d_ib controllerBox p_r">
+                <div>
+                    <p ng-click="vm.controllerBox(item.num)" ng-repeat="item in vm.home">{{item.name}}</p>
+                </div>
+                <span style="{{vm.styleBox}}" class="w_25 bc_w ts_03"></span>
+            </div>
+            <app-action></app-action>
+        </div>
+    </ion-header-bar>
+    <ion-content class="cont bc_G p_a">
+        <app-slide></app-slide>
+    </ion-content>
+</ion-view>
+

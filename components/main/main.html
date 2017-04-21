@@ -1,0 +1,16 @@
+<ion-header-bar align-title='center' style="border-bottom:1px solid #38710b;" ng-if="vm.header">
+    <i class="butLeft" style="{{vm.cut}}" ng-click="vm.goback()"></i>
+    <h1 class="title cl_g2" style="{{vm.cut1}}">{{vm.tittle}}</h1>
+    <i class="ic ic25 ic_more h25 w25 p_f r_15 l_a t_10" style="{{vm.cut}}" ng-click="vm.clickMore()" ng-show="vm.more"></i>
+</ion-header-bar>
+<ion-nav-view></ion-nav-view>
+<ion-footer-bar ng-if="vm.footer">
+    <p class="ic ic35" ng-class="{'ic_home1':vm.oneClass,'ic_home2':!vm.oneClass}" ng-click="vm.munClass('one')"
+       ui-sref="indexHome()"  nav-transition="none"></p>
+    <p class="ic ic35" ng-class="{'ic_time1':vm.twoClass,'ic_time2':!vm.twoClass}" ng-click="vm.munClass('two')"
+       ui-sref="timer()"  nav-transition="none"></p>
+    <p class="ic ic35" ng-class="{'ic_info1':vm.threeClass,'ic_info2':!vm.threeClass}" ng-click="vm.munClass('three')"
+       ui-sref="info()"  nav-transition="none"></p>
+</ion-footer-bar>
+
+

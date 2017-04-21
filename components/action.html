@@ -1,0 +1,10 @@
+<div class="actions bc_w">
+    <ion-scroll direction="x" scrollbar-x="false" class="bb-bt_G ws_n of_h" delegate-handle="leftScroll">
+        <div ng-repeat="item in vm.action" ng-click="vm.goActions(item.url)" class="pt_10 br_G w_25 d_ib pb_10">
+            <i class="ic ic40 {{item.src}}"></i>
+            <p class="ta_c w_100 pt_5 pb_10 cl_g2 f_14">{{item.name}}</p>
+        </div>
+    </ion-scroll>
+</div>
+
+

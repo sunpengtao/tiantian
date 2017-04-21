@@ -1,0 +1,32 @@
+<ion-view>
+    <ion-content class="has-header bc_G">
+        <div class="w_100 pd_15 clearfix">
+            <div class="f_l br_5 h35 bd_g w_75 of_h p_r bc_w">
+                <span class="d_ib h35 w45">
+                    <i class="ic ic25 ic_search p_r t_3"></i>
+                </span>
+                <input type="text" class="d_ib lh_40 f_20 bc_w p_a w_70 h30 l_40"  id="text">
+            </div>
+            <p class="f_r h35 lh_35 w60 bc_y2 ta_c f_18 cl_w br_5" ng-click="vm.search()">搜索</p>
+        </div>
+        <div class="w_100 bc_w mb_20 bb-bt_G">
+            <h1 class="ml_15 pr_15 h35 cl_G1 f_14 fw_b lh_35 bb_G clearfix">
+                <span class="f_l">搜索记录</span>
+                <span class="f_r f_12 fw_b cl_g1" ng-click="vm.search('clear')">清除记录</span>
+            </h1>
+            <div class="pd_15 w_100">
+                <p class="pd_5 bc_G mg_5 ta_c br_5 d_ib" ng-repeat="item in vm.searchCont" ng-hide="vm.showSearchCont" ng-click="vm.search(item.name)">{{item.name}}</p>
+                <p class="bc_G f_14 pd_5 lh_30 cl_G2 br_5" ng-show="vm.showSearchCont">{{vm.searchCont}}</p>
+            </div>
+        </div>
+        <div class="W_100 bc_w bt_G">
+            <h1 class="ml_15 pr_15 h35 cl_G1 f_14 fw_b lh_35 bb_G clearfix">
+                <span class="f_l">搜索结果</span>
+            </h1>
+            <app-action ng-show="vm.action"></app-action>
+            <div class="pd_15 w_100" ng-hide="vm.action">
+                <p class="bc_G f_14 pd_5 lh_30 cl_G2 br_5">无结果</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

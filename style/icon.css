@@ -1,0 +1,175 @@
+.ic{
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*40号图标*/
+.ic40{
+    height: 40px;
+    width: 40px;
+    background-size: 100%
+}
+/*35号图标*/
+.ic35{
+    height: 35px;
+    width: 35px;
+    background-size: 80%
+}
+/*35号图标*/
+.ic30{
+    height: 30px;
+    width: 30px;
+    background-size: 80%
+}
+/*25图标*/
+.ic25{
+    height: 25px;
+    width: 25px;
+    background-size: 80%
+}
+/*25图标*/
+.ic20{
+    height: 20px;
+    width: 20px;
+    background-size: 80%
+}
+.ic_home1 {
+    background-image: url("../img/png/home1.png");
+}
+.ic_home1 {
+    background-image: url("../img/png/home1.png");
+}
+.ic_home2 {
+    background-image: url("../img/png/home2.png");
+}
+.ic_info1 {
+    background-image: url("../img/png/info1.png");
+}
+.ic_info2 {
+    background-image: url("../img/png/info2.png");
+}
+.ic_time1 {
+    background-image: url("../img/png/time1.png");
+}
+.ic_time2 {
+    background-image: url("../img/png/time2.png");
+}
+.ic_account{
+    background-image: url("../img/png/account.png");
+}
+.ic_birthday{
+     background-image: url("../img/png/birthday.png");
+ }
+.ic_doctor{
+    background-image: url("../img/png/doctor.png");
+}
+.ic_habit{
+    background-image: url("../img/png/habit.png");
+}
+.ic_studyPlan{
+    background-image: url("../img/png/studyPlan.png");
+}
+.ic_woman{
+    background-image: url("../img/png/woman.png");
+}
+.ic_manage{
+    background-image: url("../img/png/manage.png");
+}
+.ic_repayment{
+    background-image: url("../img/png/repayment.png");
+}
+.ic_search{
+    background-image: url("../img/png/search.png");
+}
+.ic_timer{
+    background-image: url("../img/png/timer.png");
+}
+.ic_close{
+    background-image: url("../img/png/close.png");
+}
+.ic_more{
+    background-image: url("../img/png/more.png");
+}
+.ic_into{
+    background-image: url("../img/png/into.png");
+}
+.ic_test{
+    background-image: url("../img/png/test.png");
+}
+.ic_addend{
+    background-image: url("../img/png/addend.png");
+}
+.ic_123Code{
+    background-image: url("../img/png/123Code.png");
+}
+.ic_userName{
+    background-image: url("../img/png/userName.png");
+}
+.ic_surePassWorld{
+    background-image: url("../img/png/surePassWorld.png");
+}
+.ic_passWorld{
+    background-image: url("  ../img/png/passWorld.png");
+}
+.ic_phone{
+    background-image: url("../img/png/phone.png");
+}
+.ic_sure1{
+    background-image: url("../img/png/sure1.png");
+}
+.ic_sure2{
+    background-image: url("../img/png/sure2.png");
+}
+
+
+/*返回图标*/
+.butLeft {
+    border-radius: 50%;
+    background-color: #519c15;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    z-index: 10;
+}
+.butLeft:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url("../img/png/back.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 70%;
+}
+/*取消图标*/
+.but{
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: #d8b102;
+    width: 25px;
+    height: 25px;
+}
+.but_Cancel:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url("../img/png/cancel.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 70%;
+}
+.but_Right:after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url("../img/png/right.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 70%;
+}
