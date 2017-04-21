@@ -17,6 +17,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state('indexHome', {
             url: '/controllers/indexHome',
             tittle: '客厅',
+            cache:false,
             footer: true,
             views: {
                 '': {
@@ -29,6 +30,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/info',
             tittle: '数据统计',
             footer: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/info.html",
@@ -39,6 +41,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state('login', {
             url: '/controllers/login/login',
             tittle: '登录',
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/login/login.html",
@@ -50,6 +53,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/login/protocol',
             tittle: '注册协议',
             header:true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/login/protocol.html",
@@ -61,6 +65,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/timer',
             tittle: '时间轴',
             footer: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/timer.html",
@@ -71,6 +76,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state('search', {
             url: '/controllers/search',
             tittle: '搜索',
+            cache:false,
             header: true,
             views: {
                 '': {
@@ -82,6 +88,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state('account', {
             url: '/controllers/account/account',
             tittle: '个人流水',
+            cache:false,
             header:true,
             more:true,
             views: {
@@ -95,6 +102,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/birthday',
             tittle: '生日提醒',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/birthday.html",
@@ -106,6 +114,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/habit',
             tittle: '习惯养成',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/habit.html",
@@ -117,6 +126,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/studyPlan',
             tittle: '学习计划',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/studyPlan.html",
@@ -128,6 +138,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/doctor',
             tittle: '私人医生',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/doctor.html",
@@ -139,6 +150,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/woman',
             tittle: '女生',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/woman.html",
@@ -150,6 +162,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/manage',
             tittle: '理财计算器',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/manage.html",
@@ -161,6 +174,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/controllers/repayment',
             tittle: '定期还款',
             header: true,
+            cache:false,
             views: {
                 '': {
                     templateUrl: "controllers/repayment.html",

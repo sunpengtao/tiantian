@@ -84,8 +84,8 @@ app.controller('loginsCtrl',function($scope,$state,ui,alertCont,inputReg,locals,
               console.log(aryName);
               if(type=="登录"){
                   if(aryName&&aryName[0].password==cut1(1)){
-                      vm.recoveryPmt(vm.obegin,vm.olast);
-                      vm.activeSlide=0;
+                      // vm.recoveryPmt(vm.obegin,vm.olast);
+                      // vm.activeSlide=0;
                       locals.set('login',aryName);
                       $state.go("indexHome");
                   }else {

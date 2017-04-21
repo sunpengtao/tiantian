@@ -6,42 +6,78 @@
           content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
     <title>天天向上</title>
 </head>
-<!--插件-->
-<script src="library/jquery-1.9.1.min.js" charset="utf-8"></script>
-<script src="library/ionic.bundle.min.js" charset="utf-8"></script>
-<!--<script src="library/bar&2vCode.js" charset="utf-8"></script>-->
-<link rel="stylesheet" href="library/css/ionic.min.css"/>
+<!-- build:js scripts/library.js -->
+<script src="library/jquery-1.9.1.min.js"></script>
+<script src="library/ionic.bundle.min.js"></script>
+<script src="library/angular-md5.js"></script>
+<!-- endbuild -->
+
+<!-- build:css css/all.css -->
+<link rel="stylesheet" href="library/css/ionic.min.css">
+<!-- inject:css -->
+
 <link rel="stylesheet" href="style/common.css">
-<link rel="stylesheet" href="style/icon.css">
+
 <link rel="stylesheet" href="style/home.css">
-<!--依赖注入-->
+
+<link rel="stylesheet" href="style/icon.css">
+
+<!-- endinject -->
+<!-- endbuild -->
+<!-- build:js scripts/all.js -->
+<!-- inject:js -->
+
 <script src="app.js"></script>
-<!--路由-->
-<script src="configs/config.js" charset="utf-8"></script>
-<!--控制器-->
-<script src="controllers/indexHome.js" charset="utf-8"></script>
-<script src="controllers/info.js" charset="utf-8"></script>
-<script src="controllers/timerController.js" charset="utf-8"></script>
-<script src="components/main/main.js" charset="utf-8"></script>
-<script src="controllers/login/login.js" charset="utf-8"></script>
-<script src="controllers/login/protocol.js" charset="utf-8"></script>
-<script src="controllers/search.js" charset="utf-8"></script>
-<script src="controllers/account/account.js" charset="utf-8"></script>
-<script src="controllers/birthday.js" charset="utf-8"></script>
-<script src="controllers/studyPlan.js" charset="utf-8"></script>
-<script src="controllers/habit.js" charset="utf-8"></script>
-<script src="controllers/woman.js" charset="utf-8"></script>
-<script src="controllers/repayment.js" charset="utf-8"></script>
-<script src="controllers/manage.js" charset="utf-8"></script>
-<script src="controllers/doctor.js" charset="utf-8"></script>
-<!--组件-->
-<script src="components/directive.js" charset="utf-8"></script>
-<!--服务-->
-<script src="service/factory.js" charset="utf-8"></script>
-<script src="service/demo.js" charset="utf-8"></script>
-<script src="service/constant.js" charset="utf-8"></script>
-<script src="service/ui.js" charset="utf-8"></script>
-<!--样式-->
+
+<script src="components/directive.js"></script>
+
+<script src="configs/config.js"></script>
+
+<script src="controllers/birthday.js"></script>
+
+<script src="controllers/doctor.js"></script>
+
+<script src="controllers/habit.js"></script>
+
+<script src="controllers/indexHome.js"></script>
+
+<script src="controllers/info.js"></script>
+
+<script src="controllers/manage.js"></script>
+
+<script src="controllers/repayment.js"></script>
+
+<script src="controllers/search.js"></script>
+
+<script src="controllers/studyPlan.js"></script>
+
+<script src="controllers/timerController.js"></script>
+
+<script src="controllers/woman.js"></script>
+
+<script src="filter/filter.js"></script>
+
+<script src="service/constant.js"></script>
+
+<script src="service/demo.js"></script>
+
+<script src="service/factory.js"></script>
+
+<script src="service/http.js"></script>
+
+<script src="service/ui.js"></script>
+
+<script src="components/main/main.js"></script>
+
+<script src="controllers/account/account.js"></script>
+
+<script src="controllers/login/login.js"></script>
+
+<script src="controllers/login/protocol.js"></script>
+
+<!-- endinject -->
+<!-- endbuild -->
+<script src="scripts/html.js"></script>
 <body>
 <app-main></app-main>
 </body>
