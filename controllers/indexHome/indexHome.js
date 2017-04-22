@@ -2,7 +2,7 @@
  * Created by SPT on 2017/2/20.
  */
 var app = angular.module('app');
-app.controller('indexHomeCtrl', function ($ionicScrollDelegate,$scope,$state,$ionicViewSwitcher,$ionicSideMenuDelegate,locals,ary,demo,gradeColor,ui) {
+app.controller('indexHomeCtrl', function ($ionicScrollDelegate,$scope,$state,$ionicViewSwitcher,$ionicSideMenuDelegate,locals,ary,demo,gradeColor,ui,message) {
     var vm = $scope.vm = {
         cutNum:0,
         cutNum1:0,

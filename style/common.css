@@ -18,6 +18,7 @@ i,em {font-style:normal;}
 .w_10{width:10%;}
 .w_15{width:15%;}
 .w_20{width:20%;}
+.w_24{width:24%;}
 .w_25{width:25%;}
 .w_28{width:28%;}
 .w_30{width:30%;}
@@ -41,9 +42,13 @@ i,em {font-style:normal;}
 .w_95{width:95%;}
 .w_100{width:100%;}
 
+
 .h_30{height:30%;}
+.h_50{height:50%;}
 .h_100{height:100%;}
 
+.h3{height:3px;}
+.h5{height:5px;}
 .h15{height:15px !important;}
 .h17{height:17px;}
 .h20{height:20px !important;}
@@ -55,6 +60,12 @@ i,em {font-style:normal;}
 .h50{height:50px;}
 .h60{height:60px;}
 .h70{height:70px;}
+.h80{height:80px;}
+.h90{height:90px;}
+.h100{height:100px;}
+.h110{height:110px;}
+.h180{height:180px;}
+.mh_800{min-height: 800px;}
 
 .w10{width:10px !important;}
 .w15{width:15px !important;}
@@ -68,15 +79,27 @@ i,em {font-style:normal;}
 .w50{width:50px;}
 .w60{width:60px;}
 .w70{width:70px;}
+.w120{width:120px;}
 .w180{width:180px;}
 .w200{width:200px;}
+.w220{width:220px;}
+.w250{width:250px;}
+.w255{width:255px;}
+.w260{width:260px;}
+.w300{width:300px;}
+.w320{width:320px;}
+.w520{width:520px;}
+.w860{width:860px;}
+
+.mw_1100{min-width: 1100px;}
 
 .lh_25{line-height: 25px;}
 .lh_30{line-height: 30px;}
 .lh_35{line-height: 35px;}
 .lh_40{line-height: 40px;}
 .lh_45{line-height: 45px;}
-.lh_45{line-height: 45px;}
+.lh_50{line-height: 50px;}
+.lh_60{line-height: 60px;}
 
 .pd_0 {padding:0px;}
 .pd_5 {padding:5px;}
@@ -102,6 +125,7 @@ i,em {font-style:normal;}
 .pl_20{padding-left:20px;}
 .pl_25{padding-left:25px;}
 .pl_30{padding-left:30px;}
+.pl_60{padding-left:60px;}
 .pb_5 {padding-bottom:5px;}
 .pb_10{padding-bottom:10px;}
 .pb_15{padding-bottom:15px;}
@@ -114,6 +138,7 @@ i,em {font-style:normal;}
 .pr_20{padding-right:20px;}
 .pr_25{padding-right:25px;}
 .pr_30{padding-right:30px;}
+.pr_60{padding-right:60px;}
 
 .mg_5 {margin:5px;}
 .mg_10{margin:10px;}
@@ -128,12 +153,14 @@ i,em {font-style:normal;}
 .mt_20{margin-top:20px;}
 .mt_25{margin-top:25px;}
 .mt_30{margin-top:30px;}
+
 .ml_5 {margin-left:5px;}
 .ml_10{margin-left:10px;}
 .ml_15{margin-left:15px;}
 .ml_20{margin-left:20px;}
 .ml_25{margin-left:25px;}
 .ml_30{margin-left:30px;}
+.ml_35{margin-left:35px;}
 .ml_50{margin-left:50px;}
 .ml_60{margin-left:60px;}
 
@@ -143,20 +170,34 @@ i,em {font-style:normal;}
 .mb_20{margin-bottom:20px;}
 .mb_25{margin-bottom:25px;}
 .mb_30{margin-bottom:30px;}
+.mb_60{margin-bottom:60px;}
+.mb_70{margin-bottom:70px;}
+.mb_100{margin-bottom:100px;}
+.mb_130{margin-bottom:130px;}
+.mb_170{margin-bottom:170px;}
+.mb_180{margin-bottom:180px;}
+.mb_200{margin-bottom:200px;}
 .mr_5 {margin-right:5px;}
 .mr_10{margin-right:10px;}
 .mr_15{margin-right:15px;}
 .mr_20{margin-right:20px;}
 .mr_25{margin-right:25px;}
 .mr_30{margin-right:30px;}
+.mr_40{margin-right:40px;}
+.mr_70{margin-right:70px;}
+.mr_110{margin-right:110px;}
+
+
 
 /*********** 2.颜色类  **************/
 /*文字颜色*/
 .cl_w{color:#fff}/*白色*/
 .cl_r{color:#f44949}/*红色*/
+.cl_r2{color:#fc7f7f}/*浅红色*/
 .cl_o{color:#eca447}/*橙色*/
 .cl_y{color:#e2e05e}/*黄色*/
 .cl_b{color:#47a0ec}/*蓝色*/
+.cl_b2{color:#4f93ee}/*浅蓝色*/
 .cl_g1{color:#519c15}/*浅绿色*/
 .cl_g2{color:#38710b}/*深绿色*/
 /*文字颜色(灰色)*/
@@ -166,16 +207,30 @@ i,em {font-style:normal;}
 /*背景颜色*/
 .bc_w{background-color:#fff}/*白色*/
 .bc_r{background-color:#f44949}/*红色*/
+.bc_r2{background-color: #ffd7c7}/*浅红色*/
 .bc_o{background-color:#eca447}/*橙色*/
 .bc_y1{background-color:#e2e05e}/*黄色*/
 .bc_y2{background-color:#d8b102}/*土黄色*/
+.bc_y3{background-color:#fdfedc}/*肉黄色*/
+.bc_y4{background-color:#fdfeec}/*浅肉黄色*/
 .bc_b{background-color:#47a0ec}/*蓝色*/
+.bc_b2{background-color:#4f93ee}/*蓝色*/
+.bc_b3{background-color:#eef5ff}/*浅蓝*/
 .bc_g1{background-color:#519c15}/*浅绿色*/
 .bc_g2{background-color:#38710b}/*深绿色*/
+.bc_g3{background-color:#e1fde7}/*浅绿色*/
+.bc_g4{background-color:#edfff1}/*浅浅绿色*/
 .bc_G{background-color:#f1f1f1}/*浅灰*/
-
+.bc_G2{background-color:#f2f2f2}/*中灰*/
+.bc_G3{background-color:#e8e8e8}/*深灰*/
 /*描边颜色*/
 .bd_g{border:1px solid #519c15;}/*浅绿色*/
+.bd_g1{border:1px solid #519c15;}/*浅绿色*/
+.bd_g2{border:1px solid #b9e298;}/*浅绿色*/
+.bd_r1{border:1px solid #e29383;}/*浅绿色*/
+.bd_G{border:1px solid #e5e5e5;}/*浅灰色*/
+.bd_b1{border:1px solid #267bef !important;}/*蓝色*/
+
 .bb_g{border-bottom:1px solid #38710b;}/*深绿色*/
 .bb_G{border-bottom:1px solid #cccccc;}/*灰色*/
 .br_G{border-right:1px solid #cccccc;}/*灰色*/

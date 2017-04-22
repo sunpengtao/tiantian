@@ -121,7 +121,9 @@
 .ic_sure2{
     background-image: url("../img/png/sure2.png");
 }
-
+.ic_noSure{
+    background-image: url("../img/png/noSure.png");
+}
 
 /*返回图标*/
 .butLeft {

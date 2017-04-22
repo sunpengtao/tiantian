@@ -166,7 +166,6 @@ app.controller('loginsCtrl',function($scope,$state,ui,alertCont,inputReg,locals,
               };
               $(".prompt").css({right:'-140px'});
               $(".prompt1").css({right:'-40px'});
-              //console.log(j+","+i)
           };
       },
       getDom:function(begin,last,len){

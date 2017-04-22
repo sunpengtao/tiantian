@@ -17,7 +17,7 @@ app.directive('appAction', function () {
     return {
         restrict: 'E',
         scope:true,
-        templateUrl: 'components/action.html',
+        templateUrl: 'components/action/action.html',
         controller: 'actionCtrl'
     };
 });
@@ -25,7 +25,7 @@ app.directive('appSlide', function () {
     return {
         restrict: 'E',
         scope:true,
-        templateUrl: 'components/slideBox.html',
+        templateUrl: 'components/slideBox/slideBox.html',
         controller: 'slideCtrl'
     };
 });

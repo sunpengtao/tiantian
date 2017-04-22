@@ -74,3 +74,40 @@ app.service("moreBut",function($ionicActionSheet,$state){
         });
     };
 });
+app.service('waiting', function ($timeout) {
+    var team ;
+    this.open = function () {
+        var self = this;
+        document.querySelector('.modal_waiting').style.display = 'block';
+        document.querySelector('.modal_backdrop').style.display = 'block';
+        $timeout.cancel(team);
+        team = $timeout(function () {
+            self.close();
+        }, 60000)
+    };
+    this.close = function () {
+        document.querySelector('.modal_waiting').style.display = 'none';
+        document.querySelector('.modal_backdrop').style.display = 'none';
+    }
+});
+app.service('message', function ($timeout) {
+    var num=0; num1=0;
+    this.addDom=function (type,cont) {
+        var domcont='';
+        var doms=angular.element($(".messages"));
+        var sure='<div class="ta_c mb_15 h35 bc_r2 p_r"><span class="p_a t_4 l_40"><i class="ic ic25 ic_noSure"></i></span><span class="lh_35">'+cont+'</span></div>';
+
+        var nosure='<div class="ta_c mb_15 h35 bc_g3 p_r"><span class="p_a t_4 l_40"><i class="ic ic25 ic_sure2"></i></span><span class="lh_35">'+cont+'</span></div>';
+        doms.empty().css({display:"none"});
+        domcont=type==0?sure:nosure;
+        doms.css({display:"block"}).append(domcont);
+        num++;
+        setTimeout(function () {
+            num1++;
+            if(num1==num){
+                doms.empty().css({display:"none"});
+            };
+        },3500);
+    };
+
+});
