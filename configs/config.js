@@ -6,12 +6,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('default', {
             url: '',
-            controller: function ($scope, $state,locals) {
+            controller: function ($scope, $state,locals,$ionicViewSwitcher) {
                 if(locals.get('login')){
                     $state.go('indexHome')
                 }else {
                     $state.go('login')
                 };
+                $ionicViewSwitcher.nextDirection("none")
             }
         })
         .state('indexHome', {
@@ -21,7 +22,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             footer: true,
             views: {
                 '': {
-                    templateUrl: "controllers/indexHome.html",
+                    templateUrl: "controllers/indexHome/indexHome.html",
                     controller: 'indexHomeCtrl'
                 }
             }
@@ -33,13 +34,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/info.html",
+                    templateUrl: "controllers/info/info.html",
                     controller: 'infoCtrl'
                 }
             }
         })
         .state('login', {
-            url: '/controllers/login/login',
+            url: '/controllers/login',
             tittle: '登录',
             cache:false,
             views: {
@@ -68,7 +69,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/timer.html",
+                    templateUrl: "controllers/time/timer.html",
                     controller: 'timerCtrl'
                 }
             }
@@ -80,104 +81,104 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             header: true,
             views: {
                 '': {
-                    templateUrl: "controllers/search.html",
+                    templateUrl: "controllers/actions/search.html",
                     controller: 'searchCtrl'
                 }
             }
         })
         .state('account', {
-            url: '/controllers/account/account',
+            url: '/controllers/actions/account',
             tittle: '个人流水',
             cache:false,
             header:true,
             more:true,
             views: {
                 '': {
-                    templateUrl: "controllers/account/account.html",
+                    templateUrl: "controllers/actions/account.html",
                     controller: 'accountCtrl'
                 }
             }
         })
         .state('birthday', {
-            url: '/controllers/birthday',
+            url: '/controllers/actions/birthday',
             tittle: '生日提醒',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/birthday.html",
+                    templateUrl: "controllers/actions/birthday.html",
                     controller: 'birthdayCtrl'
                 }
             }
         })
         .state('habit', {
-            url: '/controllers/habit',
+            url: '/controllers/actions/habit',
             tittle: '习惯养成',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/habit.html",
+                    templateUrl: "controllers/actions/habit.html",
                     controller: 'habitCtrl'
                 }
             }
         })
         .state('studyPlan', {
-            url: '/controllers/studyPlan',
+            url: '/controllers/actions/studyPlan',
             tittle: '学习计划',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/studyPlan.html",
+                    templateUrl: "controllers/actions/studyPlan.html",
                     controller: 'studyPlanCtrl'
                 }
             }
         })
         .state('doctor', {
-            url: '/controllers/doctor',
+            url: '/controllers/actions/doctor',
             tittle: '私人医生',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/doctor.html",
+                    templateUrl: "controllers/actions/doctor.html",
                     controller: 'doctorCtrl'
                 }
             }
         })
         .state('woman', {
-            url: '/controllers/woman',
+            url: '/controllers/actions/woman',
             tittle: '女生',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/woman.html",
+                    templateUrl: "controllers/actions/woman.html",
                     controller: 'womanCtrl'
                 }
             }
         })
         .state('manage', {
-            url: '/controllers/manage',
+            url: '/controllers/actions/manage',
             tittle: '理财计算器',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/manage.html",
+                    templateUrl: "controllers/actions/manage.html",
                     controller: 'manageCtrl'
                 }
             }
         })
         .state('repayment', {
-            url: '/controllers/repayment',
+            url: '/controllers/actions/repayment',
             tittle: '定期还款',
             header: true,
             cache:false,
             views: {
                 '': {
-                    templateUrl: "controllers/repayment.html",
+                    templateUrl: "controllers/actions/repayment.html",
                     controller: 'repaymentCtrl'
                 }
             }

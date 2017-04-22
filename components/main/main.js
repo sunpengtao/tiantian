@@ -35,6 +35,7 @@ app.controller('mainCtrl', function ($scope, $state, $window , $ionicActionSheet
             if (num == "one") {
                 vm.oneClass = true;
             } else if (num == "two") {
+                
                 vm.twoClass = true;
             } else {
                 vm.threeClass = true;
@@ -44,7 +45,4 @@ app.controller('mainCtrl', function ($scope, $state, $window , $ionicActionSheet
     vm.clickMore=function(){
         moreBut(vm.tittle)
     };
-    //进入页面跳转indexHome
-    $state.go('login');
-    $ionicViewSwitcher.nextDirection("none")
 });
