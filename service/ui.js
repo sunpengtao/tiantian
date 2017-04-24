@@ -74,23 +74,36 @@ app.service("moreBut",function($ionicActionSheet,$state){
         });
     };
 });
-app.service('waiting', function ($timeout) {
-    var team ;
-    this.open = function () {
-        var self = this;
-        document.querySelector('.modal_waiting').style.display = 'block';
-        document.querySelector('.modal_backdrop').style.display = 'block';
-        $timeout.cancel(team);
-        team = $timeout(function () {
-            self.close();
-        }, 60000)
+app.service('waiting', function () {
+    var dom=angular.element($('.modal_waiting'));
+    var dom1=angular.element($('.modal_pop'));
+    var timer;
+    var b={display:"block"};
+    var n={display:"none"};
+    this.open=function () {
+        dom1.css(b);
+        dom.css(b);
+        var w=10;
+        timer=setInterval(function () {
+            if(w>50){
+                w++;
+            }else {
+                w+=4;
+            }
+            dom.css({width:w+"%"});
+        },300)
     };
-    this.close = function () {
-        document.querySelector('.modal_waiting').style.display = 'none';
-        document.querySelector('.modal_backdrop').style.display = 'none';
-    }
+   this.close=function () {
+       clearInterval(timer);
+       dom.css({width:"100%"});
+       setTimeout(function () {
+           dom1.css(n);
+           dom.css(n);
+           dom.css({width:"0"});
+       },500)
+   };
 });
-app.service('message', function ($timeout) {
+app.service('message', function () {
     var num=0; num1=0;
     this.addDom=function (type,cont) {
         var domcont='';

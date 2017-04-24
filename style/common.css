@@ -66,7 +66,7 @@ i,em {font-style:normal;}
 .h110{height:110px;}
 .h180{height:180px;}
 .mh_800{min-height: 800px;}
-
+.w0{width:0px;}
 .w10{width:10px !important;}
 .w15{width:15px !important;}
 .w17{width:17px;}
@@ -352,7 +352,7 @@ i,em {font-style:normal;}
 .nav-header .bar{border-bottom:1px solid #38710b;color:#38710b;}
 
 /*弹出框*/
-.bgPop{ position:absolute; top: 0; left: 0;bottom:0;right:0; background-color: rgba(255,255,255,0.4); height:100%;width:100%;z-index: 1;}
+.bgPop{ position:absolute; top: 0; left: 0;bottom:0;right:0; background-color: rgba(255,255,255,0.4); height:100%;width:100%;z-index: 10;}
 /*功能样式*/
 
 

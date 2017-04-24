@@ -469,47 +469,12 @@ cite {
     line-height: 1
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px
-}
 
 .h1:first-child, .h2:first-child, .h3:first-child, h1:first-child, h2:first-child, h3:first-child {
     margin-top: 0
 }
 
-.h1 + .h1, .h1 + .h2, .h1 + .h3, .h1 + h1, .h1 + h2, .h1 + h3, .h2 + .h1, .h2 + .h2, .h2 + .h3, .h2 + h1, .h2 + h2, .h2 + h3, .h3 + .h1, .h3 + .h2, .h3 + .h3, .h3 + h1, .h3 + h2, .h3 + h3, h1 + .h1, h1 + .h2, h1 + .h3, h1 + h1, h1 + h2, h1 + h3, h2 + .h1, h2 + .h2, h2 + .h3, h2 + h1, h2 + h2, h2 + h3, h3 + .h1, h3 + .h2, h3 + .h3, h3 + h1, h3 + h2, h3 + h3 {
-    margin-top: 10px
-}
 
-.h4, .h5, .h6, h4, h5, h6 {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-.h1, h1 {
-    font-size: 36px
-}
-
-.h2, h2 {
-    font-size: 30px
-}
-
-.h3, h3 {
-    font-size: 24px
-}
-
-.h4, h4 {
-    font-size: 18px
-}
-
-.h5, h5 {
-    font-size: 14px
-}
-
-.h6, h6 {
-    font-size: 12px
-}
 
 .h1 small, h1 small {
     font-size: 24px
@@ -3834,18 +3799,8 @@ a.item-content {
 }
 
 .card, .list-inset {
-    overflow: hidden;
-    margin: 20px 10px;
-    border-radius: 2px;
-    background-color: #fff
+    margin: 12px 10px;
 }
-
-.card {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .3)
-}
-
 .card .item {
     border-left: 0;
     border-right: 0

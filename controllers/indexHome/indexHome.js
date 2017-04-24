@@ -2,7 +2,7 @@
  * Created by SPT on 2017/2/20.
  */
 var app = angular.module('app');
-app.controller('indexHomeCtrl', function ($ionicScrollDelegate,$scope,$state,$ionicViewSwitcher,$ionicSideMenuDelegate,locals,ary,demo,gradeColor,ui,message) {
+app.controller('indexHomeCtrl', function ($ionicScrollDelegate,$scope,$state,$ionicViewSwitcher,$ionicSideMenuDelegate,locals,ary,demo,gradeColor,ui,waiting) {
     var vm = $scope.vm = {
         cutNum:0,
         cutNum1:0,
@@ -104,4 +104,8 @@ app.controller('indexHomeCtrl', function ($ionicScrollDelegate,$scope,$state,$io
     $scope.$on("onRepeatFinished", function () {
         vm.leftActionLi();
     });
+    setTimeout(function () {
+        waiting.close();
+    },3000);
+    waiting.open()
 });
